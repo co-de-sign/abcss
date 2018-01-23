@@ -1,7 +1,7 @@
 # Ambience-Base-Components Style Structure
 A CSS Architecture Framework
 
-ABCSS is a way to organize the style rules in three directories. This directories are `ambience`, `base` and `components` (hence the name). These directories are alphabetically ordered from the most generic to the more specific.
+ABCSS is a way to organize the style rules in three directories. These directories are `ambience`, `base` and `components` (hence the name). These directories are alphabetically ordered from the most generic to the more specific.
 
 > This architecture is heavily influenced by the [SMACSS Framework](https://smacss.com) and its [CSS Rules Categorization](https://smacss.com/book/categorizing).
 
@@ -30,8 +30,8 @@ This is where you'll find most of the Sass files. Contains one Sass file for eac
 > The components philosophy used here is from [RSCSS](https://rscss.io).
 
 **Example files:**
-- **_table-article.sass**: contains every single aspect intended for a table in a article inside the project.
-- **_form-foreign.sass**: a form oriented for foreign users.
-- **_list-download.sass**: imports most classes that interfere in a download list inside the project structure.
+- **_table-article.sass**: style the component `table-article`.
+- **_form-foreign.sass**: style the component `form-contact`.
+- **_list-download.sass**: style the component `list-download`.
 
 Components should always have the same name of the component's class they refer to. For example: the file for the component with the class `.table-article` should be `_table-article.scss`.
