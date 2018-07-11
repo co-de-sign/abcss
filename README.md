@@ -20,8 +20,8 @@ Contains another set of basic structures, such as: normalizes or mixins.
 
 **Basic files:**
 - **_normalize.sass**: stylesheet used to reset native browser properties.
+- **_reusables.sass**: contains structures that repeats throughout the project classes.
 - **_unclassed.sass**: set styles for basic html tags, those who don't usually have a class.
-- **_mixins.sass**: contains structures that repeats throughout the project classes.
 
 ## 3. Components
 
