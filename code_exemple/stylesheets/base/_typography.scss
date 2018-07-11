@@ -1,0 +1,35 @@
+body {
+  font-family: $font-family-body;
+}
+
+h1 {
+  font-size: $font-size-mega;
+  line-height: 1.3;
+}
+
+h2 {
+  font-size: $font-size-kilo;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: $font-size-hecto;
+  line-height: 1.2;
+}
+
+h4 {
+  font-size: $font-size-deca;
+  line-height: 1.2;
+}
+
+p {
+  font-size: $font-size-base;
+  line-height: 1.2;
+}
+
+label {
+  font-size: $font-size-deci;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-headings;
+}

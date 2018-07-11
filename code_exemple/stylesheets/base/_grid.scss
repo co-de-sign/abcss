@@ -1,0 +1,55 @@
+// grid system
+
+$nOfColumns: 12; // !default
+$gutter: 1rem; // !default
+$columnWidth: ( 100%/#{$nOfColumns} - #{$gutter} );
+
+$nOfColumnsTablet: 8; // !default
+$gutterTablet: 1rem; // !default
+$columnWidthTablet: ( 100%/#{$nOfColumnsTablet} - #{$gutterTablet} );
+
+$nOfColumnsMobile: 4; // !default
+$gutterMobile: 1rem; // !default
+$columnWidthMobile: ( 100%/#{$nOfColumnsMobile} - #{$gutterMobile} );
+
+$tabletWidth: 1023px; // Mudado de 740 para 1023 !default
+$mobileWidth: 480px; // !default
+
+@mixin grid($size) {
+  display: block;
+  float: left;
+  width: calc( (#{$columnWidth})*#{$size} + (#{$size} - 1)*#{$gutter});
+  max-width: calc(100% - #{$gutter});
+  margin-right: calc(#{$gutter}/2);
+  margin-left: calc(#{$gutter}/2);
+
+  @media screen and (max-width: $tabletWidth) {
+    width: calc( (#{$columnWidthTablet})*#{$size} + (#{$size} - 1)*#{$gutterTablet});
+    max-width: calc(100% - #{$gutterTablet});
+    margin-right: calc(#{$gutterTablet}/2);
+    margin-left: calc(#{$gutterTablet}/2);
+  }
+
+  @media screen and (max-width: $mobileWidth) {
+    width: calc( (#{$columnWidthMobile})*#{$size} + (#{$size} - 1)*#{$gutterMobile});
+    max-width: calc(100% - #{$gutterMobile});
+    margin-right: calc(#{$gutterMobile}/2);
+    margin-left: calc(#{$gutterMobile}/2);
+  }
+
+}
+
+@mixin offset($side, $size) {
+  margin-#{$side}: calc((#{$columnWidth})*#{$size} + (#{$size} - 1)*#{$gutter} + 1.5*#{$gutter});
+
+  @media screen and (max-width: $tabletWidth) {
+    margin-#{$side}: calc((#{$columnWidthTablet})*#{$size} + (#{$size} - 1)*#{$gutterTablet} + 1.5*#{$gutterTablet});
+  }
+
+  @media screen and (max-width: $mobileWidth) {
+    margin-#{$side}: calc((#{$columnWidthMobile})*#{$size} + (#{$size} - 1)*#{$gutterMobile} + 1.5*#{$gutterMobile});
+  }
+}
+
+@mixin offsetLeft($size) {@include offset(left, $size);}
+@mixin offsetRight($size) {@include offset(right, $size);}

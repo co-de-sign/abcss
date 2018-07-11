@@ -1,0 +1,41 @@
+// Defining values
+$xsmall-range-max:   374px;
+$small-range-min:   375px;
+$small-range-max:   767px;
+$medium-range-min:  768px;
+$medium-range-max:  991px; 
+$large-range-min:   992px; 
+$large-range-max:   1199px;
+$xlarge-range-min:  1200px;
+$xlarge-range-max:  1599px;
+$xxlarge-range-min: 1600px;
+
+
+// Defining media queries
+$xsmall-only:   "only screen and (max-width: #{$xsmall-range-max})" !default;
+
+$small-only:   "only screen and (min-width:#{$small-range-min}) and (max-width:#{$small-range-max})" !default;
+$small-up:   "only screen and (min-width:#{$small-range-min})" !default;
+$small-down:   "only screen and (max-width:#{$small-range-max})" !default;
+
+$medium-only:  "only screen and (min-width:#{$medium-range-min}) and (max-width:#{$medium-range-max})" !default;
+$medium-up:    "only screen and (min-width:#{$medium-range-min})" !default;
+$medium-down:   "only screen and (max-width:#{$medium-range-max})" !default;
+
+$large-only:   "only screen and (min-width:#{$large-range-min}) and (max-width:#{$large-range-max})" !default;
+$large-up:     "only screen and (min-width:#{$large-range-min})" !default;
+$large-down:   "only screen and (max-width:#{$large-range-max})" !default;
+
+$xlarge-only:  "only screen and (min-width:#{$xlarge-range-min}) and (max-width:#{$xlarge-range-max})" !default;
+$xlarge-up:    "only screen and (min-width:#{$xlarge-range-min})" !default;
+$xlarge-down:   "only screen and (max-width:#{$xlarge-range-max})" !default;
+
+$xxlarge-up:   "only screen and (min-width:#{$xxlarge-range-min})" !default;
+// Uso Exemplo:
+//
+// @media #{$small-only} {
+//
+// }
+
+//small-down: all phones
+//xsmall-only: iphone5 or less
