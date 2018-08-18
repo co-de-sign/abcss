@@ -15,7 +15,7 @@ const HomePage = () => (
         `ambience`, `base` and `components` (hence the name).
       </p>
       <p>
-        <Link to="/docs">Find out what goes where</Link>
+        <Link to="/content">Find out what goes where</Link>
       </p>
     </section>
   </main>

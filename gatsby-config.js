@@ -7,5 +7,13 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
     'gatsby-plugin-eslint',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/content`,
+        name: 'markdown-pages',
+      },
+    },
+    'gatsby-transformer-remark',
   ],
 }
