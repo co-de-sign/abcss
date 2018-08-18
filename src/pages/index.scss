@@ -1,0 +1,16 @@
+@import "../ambience/colors";
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin: 0 25vw;
+  min-height: 100vh;
+
+  & > .description {
+    margin-top: 76px;
+
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,20 @@
+@import "../ambience/typography";
+
+h1 {
+  font-family: $font-helvetica;
+  font-size: 56px;
+  font-weight: 500;
+
+  margin: 0;
+}
+
+p {
+  font-family: $font-helvetica;
+  font-size: 20px;
+
+  margin: 0;
+}
+
+p + p {
+  margin-top: 1em;
+}

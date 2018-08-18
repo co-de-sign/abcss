@@ -1,0 +1,20 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb"
+  ],
+  "plugins": [
+    "eslint-plugin-graphql"
+  ],
+  "rules": {
+    "semi": 0,
+    "react/jsx-filename-extension": [
+      1, {
+        "extensions": [".js", ".jsx"]
+      }
+    ]
+  },
+  "globals": {
+    "graphql": true
+  }
+}

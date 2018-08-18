@@ -1,0 +1,9 @@
+@import "../../ambience/colors";
+
+.abcss-name > h1 {
+  transition: all .3s ease-in;
+
+  &:first-letter {
+    color: $color-purple;
+  }
+}
