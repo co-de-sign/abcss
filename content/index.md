@@ -3,6 +3,8 @@ path: '/content'
 title: 'ABC Style Structure'
 ---
 
+# ABC Style Structure
+
 > This architecture is heavily influenced by the [SMACSS Framework](https://smacss.com) and its [CSS Rules Categorization](https://smacss.com/book/categorizing).
 
 ## 1. Ambience

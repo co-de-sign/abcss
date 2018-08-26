@@ -5,21 +5,15 @@ import PropTypes from 'prop-types'
 
 import '../base/normalize.scss'
 import '../base/typography.scss'
-import './page.scss'
+
+import './style.scss'
 
 export default function Page({ data }) {
   const { markdownRemark } = data
-  const { frontmatter, html } = markdownRemark
+  const { html } = markdownRemark
 
   return (
-    <div className="page-container">
-      <h1 className="title">{frontmatter.title}</h1>
-
-      <div
-        className="content"
-        dangerouslySetInnerHTML={{ __html: html }}
-      />
-    </div>
+    <article className="page-container" dangerouslySetInnerHTML={{ __html: html }} />
   )
 }
 

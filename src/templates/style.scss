@@ -1,0 +1,18 @@
+@import "~include-media/dist/include-media";
+
+.page-container {
+  margin-top: 3em;
+  margin-left: 2.5em;
+  margin-right: 2em;
+  margin-bottom: 5em;
+
+  @include media('>tablet') {
+    margin-left: 20vw;
+    margin-right: 20vw;
+  }
+
+  @include media('>1440px') {
+    margin-left: 30vw;
+    margin-right: 30vw;
+  }
+}
